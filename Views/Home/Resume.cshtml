@@ -1,0 +1,27 @@
+﻿@using PenaP4.Models
+@model IEnumerable<PenaP4.Models.Resume.ResumeViewModel>
+@{
+    ViewData["Title"] = "Resume";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+</head>
+<body>
+
+    <h2>Resume</h2>
+    <div>
+        <ul>
+            @foreach (var resume in Model)
+            {
+                <li>@resume.Preamble - @resume.Preamble</li>
+            }
+        </ul>
+    </div>
+</body>
+</html>
+
+
